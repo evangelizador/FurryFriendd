@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro en FurryFriend</title>
+    <link rel="stylesheet" href="c.css"> 
+</head>
+
+<body>
+    <header class="banner">
+        <h1>Regístrate!!</h1>
+        <nav>
+            <a href="uno.html">Inicio</a>
+            <a href="dos.html">Nosotras</a>
+            <a href="tres.html">Condiciones</a>
+            <a href="cuatro.html">Consejos</a>
+            <a href="cinco.html">Preguntas</a>
+            <a href="seis.html">Comunidad</a>
+            <a href="siete.html">Registro</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h2>Registro </h2>
+
+            <form onsubmit="return false;">
+                <div class="section-title">Detalles de inicio de sesión
+                    <p>------------------------------------------------------------</p>
+                </div>
+                <div class="form-group">
+                    <label for="username">Nombre de usuario</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="section-title">General
+                    <p>------------------------------------------------------------</p>
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">Género</label>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Masculino</option>
+                        <option value="female">Femenino</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Como te Identificas</label>
+                    <div class="checkbox-group-inline">
+                        <label><input type="checkbox" name="seeking" value="male">Masculino</label>
+                        <label><input type="checkbox" name="seeking" value="female">Femenino</label>
+                        <label><input type="checkbox" name="seeking" value="trans">Trans</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="birthdate">Fecha de nacimiento</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="country">País</label>
+                    <select id="country" name="country" required>
+                        <option value="usa">Estados Unidos</option>
+                        <option value="canada">Canadá</option>
+                        <option value="mexico">México</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="brazil">Brasil</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="spain">España</option>
+                        <option value="uk">Reino Unido</option>
+                        <option value="germany">Alemania</option>
+                        <option value="france">Francia</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="city">Ciudad</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Enviar</button>
+                    <small>Al hacer clic en enviar, aceptas los Términos de servicio y la Política de
+                        privacidad.</small>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>Bienvenido a FurryFriend</p>
+        <p>Contacto: FurryFriend@love.com</p>
+    </footer>
+</body>
+
+</html>
